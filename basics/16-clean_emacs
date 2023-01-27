@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Delete all files in the current working directory that end with ~
+for file in *~; do
+  if [ -f "$file" ]; then
+    rm "$file"
+  fi
+done
